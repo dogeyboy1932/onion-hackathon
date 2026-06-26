@@ -23,7 +23,7 @@ enum MissionStatus {
     Failed
 }
 
-struct Dragon {
+pub struct Dragon {
     name: String,
     fire_level: u16,
     mood: DragonMood,
@@ -32,14 +32,14 @@ struct Dragon {
     created_at: i64,
 }
 
-struct Mission {
+pub struct Mission {
     dragon: Dragon,
     target: Village,
     risk_level: u16,
     status: MissionStatus,
 }
 
-struct Village {
+pub struct Village {
     name: String,
     damage: u64,
     incidents: Vec<String>,
